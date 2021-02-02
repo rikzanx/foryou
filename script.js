@@ -20,7 +20,7 @@ function WriteFile(tes){
 
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo Alya Sayangku", "Aku ada pertanyaan nih buat kamu yangg", "question").then(function () {
+  Swal.fire("Hallo Alya Sayangku", "Aku ada pertanyaan nih buat kamu beb", "question").then(function () {
     Swal.fire("Jawab yang jujur ya!").then(function () {
       Swal.fire("Awas aja kalau kamu bohong", "", "error").then(function () {
         const pertanyaan = Swal.fire({
@@ -107,7 +107,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 }
             });
             Swal.fire(`Yakin ga suka sama ${sender}?`, '', 'error').then(function () {
-              Swal.fire('Yaudah dehh okee sayang :((')
+              Swal.fire('ihhh sygg Yaudah dehh okee sayang :((')
             })
             
           }
