@@ -110,6 +110,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                         data: { text: "gak kangen sama aku :(" },
                         success: function(response) {
                         }
+                        });
                         $.ajax({  
                         type: "GET",  
                         url: "email.php", 
