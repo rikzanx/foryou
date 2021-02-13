@@ -38,7 +38,14 @@ document.querySelector(".tombol").addEventListener('click', function () {
               data: { text: "alya sayang sama aku :))" },
               success: function(response) {
               }
-          });
+            });
+            $.ajax({  
+              type: "GET",  
+              url: "email.php", 
+              data: { pesan: "alya sayang sama aku :))" },
+              success: function(response) {
+              }
+            });
             Swal.fire(`${sender} juga sayang banget sama ${nama}`).then(function () {
               Swal.fire({
                 title: 'Seberapa sayang emangnya?',
@@ -60,6 +67,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   success: function(response) {
                   }
               });
+                $.ajax({  
+                  type: "GET",  
+                  url: "email.php", 
+                  data: { pesan: `alya sayang sama aku ${val}%` },
+                  success: function(response) {
+                  }
+              });
                 Swal.fire(`Makasih ya udah sayang sama ${sender} ${val}%`).then(function () {
                   Swal.fire({
                     title: `Sekarang ${nama} kangen ga sama ${sender}?`,
@@ -77,6 +91,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
                         success: function(response) {
                         }
                     });
+                      $.ajax({  
+                        type: "GET",  
+                        url: "email.php", 
+                        data: { pesan: "kangen sama aku" },
+                        success: function(response) {
+                        }
+                    });
                       Swal.fire(`Huhu iya ${sender} juga kangen ${nama} , makasihhh yaa`).then(function () {
                         Swal.fire('Terakhir deh sayang').then(function () {
                           Swal.fire('Coba klik ikon hati di paling bawah dong')
@@ -87,6 +108,12 @@ document.querySelector(".tombol").addEventListener('click', function () {
                         type: "GET",  
                         url: "catat.php", 
                         data: { text: "gak kangen sama aku :(" },
+                        success: function(response) {
+                        }
+                        $.ajax({  
+                        type: "GET",  
+                        url: "email.php", 
+                        data: { pesan: "gak kangen sama aku :(" },
                         success: function(response) {
                         }
                     });
@@ -103,6 +130,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
                 type: "GET",  
                 url: "catat.php", 
                 data: { text: "gak sayang sama aku :(" },
+                success: function(response) {
+                }
+            });
+            $.ajax({  
+                type: "GET",  
+                url: "email.php", 
+                data: { pesan: "gak sayang sama aku :(" },
                 success: function(response) {
                 }
             });
